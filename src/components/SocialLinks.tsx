@@ -6,7 +6,7 @@ const SocialLinks: React.FC = () => {
   const socialLinks = [
     { name: 'Instagram', icon: Instagram, url: '#', color: 'hover:text-pink-400' },
     { name: 'YouTube', icon: Youtube, url: '#', color: 'hover:text-red-400' },
-    { name: 'TikTok', icon: '🎵', url: '#', color: 'hover:text-white' },
+    { name: 'TikTok', icon: 'https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/2840/tiktok-logo-1024.png', url: '#', color: 'hover:text-white' },
     { name: 'Steam', icon: '🎮', url: '#', color: 'hover:text-blue-400' },
     { name: 'Epic Games', icon: '🎯', url: '#', color: 'hover:text-purple-400' },
   ];
