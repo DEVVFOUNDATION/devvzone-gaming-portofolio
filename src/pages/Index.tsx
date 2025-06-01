@@ -131,7 +131,7 @@ const Index = () => {
                 <div className="text-gray-300 leading-relaxed space-y-3 retro-text">
                   <p>Halo! Aku adalah seseorang yang percaya bahwa setiap skill itu punya nilai, asal dijalankan dengan tekad dan disiplin. Dari layar kecil HP hingga software editing dan logika coding, aku berusaha untuk berkembang di berbagai dunia digital—dari gaming, desain, hingga konten kreatif.</p>
                   
-                  <p>Fokus utama saat ini adalah membangun layanan joki terpercaya dan berkualitas lewat devvjoki, tempat di mana kepercayaan dan kepuasan jadi prioritas. Di balik layar, aku juga terbiasa mengelola data, membangun sistem tracking, hingga menyusun strategi konten dan branding.</p>
+                  <p>Fokus utama saat ini adalah membangun layanan joki terpercaya dan berkualitas lewat devvjoki, tempat dimana kepercayaan dan kepuasan jadi prioritas. Di balik layar, aku juga terbiasa mengelola data, membangun sistem tracking, hingga menyusun strategi konten dan branding.</p>
                   
                   <p>Buatku, jadi hebat bukan tentang jadi yang paling cepat, tapi jadi yang paling konsisten. Aku bukan siapa-siapa—tapi aku tahu aku bisa jadi seseorang, karena aku bergerak setiap hari untuk ke sana.</p>
                   
@@ -210,17 +210,17 @@ const Index = () => {
             <SocialLinks />
           </div>
           <div className="text-center text-gray-400 retro-text">
-            <p>&copy; 2024 DEVVZONE. All rights reserved.</p>
+            <p>&copy; 2025 DEVVZONE. All rights reserved.</p>
             <p className="text-sm mt-2">Built with passion for gaming and technology</p>
             <div className="flex justify-center space-x-4 mt-2 text-xs">
               <span className="pixel-border px-2 py-1 bg-gradient-to-r from-cyan-400/10 to-purple-400/10 border border-cyan-400/30">
-                RETRO
+                H
               </span>
               <span className="pixel-border px-2 py-1 bg-gradient-to-r from-purple-400/10 to-pink-400/10 border border-purple-400/30">
-                GAMING
+                41
               </span>
               <span className="pixel-border px-2 py-1 bg-gradient-to-r from-green-400/10 to-cyan-400/10 border border-green-400/30">
-                ZONE
+                DEVV
               </span>
             </div>
           </div>
