@@ -4,11 +4,11 @@ import { Instagram, Youtube } from 'lucide-react';
 
 const SocialLinks: React.FC = () => {
   const socialLinks = [
-    { name: 'Instagram', icon: Instagram, url: '#', color: 'hover:text-pink-400' },
+    { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/mdeva_a/', color: 'hover:text-pink-400' },
     { name: 'YouTube', icon: Youtube, url: '#', color: 'hover:text-red-400' },
-    { name: 'TikTok', icon: '🎵', url: '#', color: 'hover:text-white' },
-    { name: 'Steam', icon: '🎮', url: '#', color: 'hover:text-blue-400' },
-    { name: 'Epic Games', icon: '🎯', url: '#', color: 'hover:text-purple-400' },
+    { name: 'TikTok', icon: Tiktok, url: 'https://www.tiktok.com/@devvjoki', color: 'hover:text-white' },
+    { name: 'Steam', icon: Steam, url: '#', color: 'hover:text-blue-400' },
+    { name: 'Epic Games', icon: Epic Games, url: '#', color: 'hover:text-purple-400' },
   ];
 
   return (
