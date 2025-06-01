@@ -129,7 +129,7 @@ const Index = () => {
               <div className="flex-1 text-center md:text-left">
                 <h2 className="text-3xl font-bold text-cyan-400 mb-2 retro-glow">Deva / Devv</h2>
                 <div className="text-gray-300 leading-relaxed space-y-3 retro-text">
-                  <p>Halo! Aku adalah seseorang yang percaya bahwa setiap skill itu punya nilai, asal dijalankan dengan tekad dan disiplin. Dari layar kecil HP hingga software editing dan logika coding, aku berusaha untuk berkembang di berbagai dunia digital—dari gaming, desain, hingga konten kreatif.</p>
+                  <p>Halo! Aku adalah seseorang yang percaya bahwa setiap skill itu punya nilai, asal dijalankan dengan tekad dan disiplin. Berawal dari keterbatasan hingga bisa menggunakan software editing dan logika coding, aku berusaha untuk berkembang di berbagai dunia digital—dari gaming, desain, hingga konten kreatif.</p>
                   
                   <p>Fokus utama saat ini adalah membangun layanan joki terpercaya dan berkualitas lewat devvjoki, tempat dimana kepercayaan dan kepuasan jadi prioritas. Di balik layar, aku juga terbiasa mengelola data, membangun sistem tracking, hingga menyusun strategi konten dan branding.</p>
                   
