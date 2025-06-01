@@ -10,7 +10,7 @@ const RetroMusic: React.FC = () => {
     // Create audio element for retro game music
     const audio = new Audio();
     // Using a placeholder URL - in real app, you'd use actual retro game music
-    audio.src = 'data:audio/wav;base64,UklGRnoGAABXQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YQoGAACBhYqFbF1fdJivrJBhNjVgodDbq2EcBj+a2/LDciUFLIHO8tiJNwgZaLvt559NEAxQp+PwtmMcBjiR1/LMeSwFJHfH8N2QQAoUXrTp66hVFApGn+D2u2czBTOFzvCqfS8HH2zE7+OWSBICYZHa9sdyJgUuhM/t2YE0Bx1lrejmr10NClKl5O6xYyAFMIra8a5bFwpGm9z9ul04BTOFzuo=';
+    audio.src = 'https://soundcloud.com/vionita-music/dia-masa-lalumu-aku-masa?si=3cc9eef93ddc492d9dcfd1b593244ca4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing';
     audio.loop = true;
     audio.volume = 0.3;
     audioRef.current = audio;
