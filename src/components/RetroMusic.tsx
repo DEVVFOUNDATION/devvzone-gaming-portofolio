@@ -15,15 +15,19 @@ const RetroMusic: React.FC = () => {
     // Create audio element for retro game music
     const audio = new Audio();
     // Using a placeholder URL - in real app, you'd use actual retro game music
-    audio.src = 'https://ia800200.us.archive.org/21/items/vionita-dia-masa-lalumu-aku-masa-depanmu-official-music-video/VIONITA%20-%20DIA%20MASA%20LALUMU%2C%20AKU%20MASA%20DEPANMU%20%28OFFICIAL%20MUSIC%20VIDEO%29.mp3';
+    audio.src = '/RetroGaming.mp3';
     audio.loop = true;
+    audio.autoplay = true;
     audio.volume = volume[0] / 100;
     audioRef.current = audio;
 
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
+      } else {
+        audioRef.current.play().catch(console.error);
       }
+      setIsPlaying(!isPlaying);
     };
   }, []);
 

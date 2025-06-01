@@ -25,53 +25,53 @@ const GameCard: React.FC<GameCardProps> = ({ title, ign, id, platform }) => {
   const getBackgroundImage = (gameTitle: string) => {
     const gameBackgrounds: Record<string, string> = {
       // Mobile Games
-      'Roblox': 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
-      'MLBB': 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop',
-      'PUBG Mobile': 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
-      'Delta Force Mobile': 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop',
-      'Chess Online': 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
-      'Boom Beach': 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=400&h=300&fit=crop',
-      'COC': 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop',
-      'Sky': 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop',
-      'HOK': 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
-      'CODM': 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop',
+      'Roblox': '/Roblox.webp',
+      'MLBB': '/MLBB.jpg',
+      'PUBG Mobile': '/PUBGM.jpg',
+      'Delta Force Mobile': '/DF.jpg',
+      'Chess Online': '/CHESS.jpg',
+      'Boom Beach': '/BB.jpg',
+      'COC': '/COC.jpg',
+      'Sky': '/SKY.jpg',
+      'HOK': '/HOK.jpg',
+      'CODM': '/CODM.jpg',
       
       // PC Games
-      'Dying Light': 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
-      'Dead Island 2': 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop',
-      'Supermarket Simulator': 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
-      'NFS: HEAT': 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop',
-      'Point Blank': 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
-      'Garena Delta Force': 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=400&h=300&fit=crop',
-      'PUBG': 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop',
-      'LIMBO': 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop',
-      'AYODANCE': 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
-      'LOST SAGA': 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop',
-      'DRAGON NEST': 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
-      'CS: EXTREME': 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=400&h=300&fit=crop',
-      'CSO': 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=400&h=300&fit=crop',
-      'DRAGON CITY': 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop',
-      'NINJA SAGA': 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=400&h=300&fit=crop',
-      'CRIMINAL CASE': 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=400&h=300&fit=crop',
-      'DEVOUR': 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=400&h=300&fit=crop',
-      'PVZ': 'https://images.unsplash.com/photo-1523712999610-f77fbcfc3843?w=400&h=300&fit=crop',
+      'Dying Light': '/DL.jpg',
+      'Dead Island 2': '/DI2.jpg',
+      'Supermarket Together': '/ST.jpg',
+      'NFS: HEAT': '/NFS.jpg',
+      'Point Blank': '/PB.jpg',
+      'Garena Delta Force': '/DFPC.webp',
+      'PUBG': '/PUBGPC.jpg',
+      'LIMBO': '/LIMBO.jpg',
+      'AYODANCE': '/AYODANCE.jpg',
+      'LOST SAGA': '/LS.jpg',
+      'DRAGON NEST': '/DN.jpg',
+      'CS: EXTREME': '/CSE.jpg',
+      'CSO': '/CSO.webp',
+      'DRAGON CITY': '/DC.jpg',
+      'NINJA SAGA': '/NS.jpeg',
+      'CRIMINAL CASE': '/CC.jpg',
+      'DEVOUR': '/DEVOUR.jpg',
+      'PVZ': '/PVZ.jpg',
     };
     
-    return gameBackgrounds[gameTitle] || 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=400&h=300&fit=crop';
+    return gameBackgrounds[gameTitle] || '/ST.jpg';
   };
 
   return (
-    <Card className="group relative overflow-hidden bg-gradient-to-br from-slate-800/90 to-slate-900/90 border-2 border-cyan-400/30 hover:border-cyan-400 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/30 retro-card h-40">
+    <Card className="group relative overflow-hidden bg-gradient-to-br from-slate-800/80 to-slate-900/80 border-2 border-cyan-400/30 hover:border-cyan-400 transition-all duration-500 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/30 retro-card h-40">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20 group-hover:opacity-30 transition-opacity duration-500"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-75 group-hover:opacity-85 transition-opacity duration-500"
         style={{
           backgroundImage: `url(${getBackgroundImage(title)})`,
         }}
       />
       
       {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/80 via-slate-800/70 to-slate-900/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/60 via-slate-800/50 to-slate-900/70" />
       
       {/* Retro Grid Background */}
       <div className="absolute inset-0 opacity-10">
