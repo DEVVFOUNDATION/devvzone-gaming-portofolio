@@ -12,12 +12,13 @@ const SocialLinks: React.FC = () => {
   ];
 
   return (
-    <div className="flex justify-center space-x-6">
-      {socialLinks.map((social) => (
+    <div className="flex justify-center space-x-8">
+      {socialLinks.map((social, index) => (
         <a
           key={social.name}
           href={social.url}
-          className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125`}
+          className={`text-gray-400 ${social.color} transition-all duration-300 transform hover:scale-125 retro-button p-3 bg-gradient-to-br from-slate-800/50 to-slate-900/50 border border-cyan-400/30 hover:border-cyan-400 animate-pulse`}
+          style={{ animationDelay: `${index * 0.2}s` }}
           aria-label={social.name}
         >
           {typeof social.icon === 'string' ? (
