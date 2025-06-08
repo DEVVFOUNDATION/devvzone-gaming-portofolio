@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Instagram, Youtube, Music } from 'lucide-react';
-import { FaSteam, FaDiscord,FaTiktok } from "react-icons/fa";
+import { FaSteam, FaDiscord, FaTiktok } from "react-icons/fa";
 
 const SocialLinks: React.FC = () => {
   const socialLinks = [
