@@ -119,7 +119,7 @@ const Index = () => {
                 <div className="relative">
                   <div className="w-32 h-32 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full p-1 animate-pulse">
                     <div className="w-full h-full bg-slate-800 rounded-full flex items-center justify-center">
-                      <span className="text-6xl font-bold text-cyan-400 retro-text">D</span>
+                      <img src="Devvprofil.jpg" alt="Devv Profil" className="w-full h-full object-cover rounded-full"/>
                     </div>
                   </div>
                   <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-slate-800 animate-pulse"></div>
