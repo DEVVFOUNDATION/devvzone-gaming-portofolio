@@ -9,27 +9,30 @@ const RetroMusic: React.FC = () => {
   const [volume, setVolume] = useState([30]);
   const [isMuted, setIsMuted] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  const [hasShownAlert, setHasShownAlert] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   useEffect(() => {
     // Create audio element for retro game music
     const audio = new Audio();
-    // Using a placeholder URL - in real app, you'd use actual retro game music
     audio.src = '/RetroGaming.mp3';
     audio.loop = true;
-    audio.autoplay = true;
+    audio.autoplay = false; // Disable autoplay
     audio.volume = volume[0] / 100;
     audioRef.current = audio;
+
+    // Show alert when component mounts
+    if (!hasShownAlert) {
+      alert("Jangan lupa nyalakan sound agar bisa memberikan pengalaman terbaik.");
+      setHasShownAlert(true);
+    }
 
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
-      } else {
-        audioRef.current.play().catch(console.error);
       }
-      setIsPlaying(!isPlaying);
     };
-  }, []);
+  }, [hasShownAlert]);
 
   useEffect(() => {
     if (audioRef.current) {
