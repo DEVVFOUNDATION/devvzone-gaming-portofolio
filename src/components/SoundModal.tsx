@@ -39,10 +39,10 @@ const SoundModal: React.FC<SoundModalProps> = ({ isOpen, onClose }) => {
             <div className="text-gray-300 space-y-2">
               <p className="flex items-center justify-center gap-2">
                 <span className="text-xl">🎵</span>
-                <span>Jangan lupa nyalakan sound agar bisa</span>
+                <span>No sound, no vibes.</span>
               </p>
               <p className="text-cyan-400 font-semibold">
-                memberikan pengalaman terbaik! ✨
+                Turn it on and get in the zone!✨
               </p>
             </div>
 
@@ -66,7 +66,7 @@ const SoundModal: React.FC<SoundModalProps> = ({ isOpen, onClose }) => {
             >
               <span className="flex items-center justify-center gap-2">
                 <span className="text-lg">🎯</span>
-                LET'S GAME!
+                GAME ON!
                 <span className="text-lg">⚡</span>
               </span>
             </Button>
