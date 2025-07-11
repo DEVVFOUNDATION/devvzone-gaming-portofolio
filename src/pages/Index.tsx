@@ -7,6 +7,7 @@ import SocialLinks from '@/components/SocialLinks';
 import RetroEffects from '@/components/RetroEffects';
 import GameMascots from '@/components/GameMascots';
 import RetroMusic from '@/components/RetroMusic';
+import { Gamepad2, Code2, Zap, Target, Brain, Users } from 'lucide-react';
 
 const Index = () => {
   const [userName, setUserName] = useState<string | null>(null);
@@ -130,35 +131,65 @@ const Index = () => {
                 </div>
                 
                 {/* Skills Grid */}
-                <div className="grid grid-cols-3 gap-3 mt-6">
-                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-cyan-400/30 hover:border-cyan-400 transition-all duration-300">
-                    <div className="text-2xl mb-2 text-cyan-400">🎮</div>
-                    <div className="text-sm text-white font-medium">Gaming</div>
+                <div className="grid grid-cols-3 gap-4 mt-6 w-full max-w-md">
+                  <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-lg rounded-2xl p-5 text-center border border-cyan-400/20 hover:border-cyan-400/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-cyan-400/20 cursor-pointer">
+                    <div className="relative mb-3">
+                      <div className="w-12 h-12 mx-auto bg-gradient-to-br from-cyan-400/20 to-cyan-600/20 rounded-xl flex items-center justify-center group-hover:from-cyan-400/30 group-hover:to-cyan-600/30 transition-all duration-300">
+                        <Gamepad2 size={24} className="text-cyan-400 group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                      <div className="absolute inset-0 bg-cyan-400/5 rounded-xl blur-sm group-hover:bg-cyan-400/10 transition-all duration-300"></div>
+                    </div>
+                    <div className="text-sm text-white font-semibold group-hover:text-cyan-400 transition-colors duration-300">Gaming</div>
                   </div>
                   
-                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-purple-400/30 hover:border-purple-400 transition-all duration-300">
-                    <div className="text-2xl mb-2 text-purple-400">💻</div>
-                    <div className="text-sm text-white font-medium">Development</div>
+                  <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-lg rounded-2xl p-5 text-center border border-purple-400/20 hover:border-purple-400/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-purple-400/20 cursor-pointer">
+                    <div className="relative mb-3">
+                      <div className="w-12 h-12 mx-auto bg-gradient-to-br from-purple-400/20 to-purple-600/20 rounded-xl flex items-center justify-center group-hover:from-purple-400/30 group-hover:to-purple-600/30 transition-all duration-300">
+                        <Code2 size={24} className="text-purple-400 group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                      <div className="absolute inset-0 bg-purple-400/5 rounded-xl blur-sm group-hover:bg-purple-400/10 transition-all duration-300"></div>
+                    </div>
+                    <div className="text-sm text-white font-semibold group-hover:text-purple-400 transition-colors duration-300">Development</div>
                   </div>
                   
-                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-green-400/30 hover:border-green-400 transition-all duration-300">
-                    <div className="text-2xl mb-2 text-green-400">⚡</div>
-                    <div className="text-sm text-white font-medium">Quick Execution</div>
+                  <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-lg rounded-2xl p-5 text-center border border-green-400/20 hover:border-green-400/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-green-400/20 cursor-pointer">
+                    <div className="relative mb-3">
+                      <div className="w-12 h-12 mx-auto bg-gradient-to-br from-green-400/20 to-green-600/20 rounded-xl flex items-center justify-center group-hover:from-green-400/30 group-hover:to-green-600/30 transition-all duration-300">
+                        <Zap size={24} className="text-green-400 group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                      <div className="absolute inset-0 bg-green-400/5 rounded-xl blur-sm group-hover:bg-green-400/10 transition-all duration-300"></div>
+                    </div>
+                    <div className="text-sm text-white font-semibold group-hover:text-green-400 transition-colors duration-300">Quick Execution</div>
                   </div>
                   
-                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-pink-400/30 hover:border-pink-400 transition-all duration-300">
-                    <div className="text-2xl mb-2 text-pink-400">🎯</div>
-                    <div className="text-sm text-white font-medium">Precision</div>
+                  <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-lg rounded-2xl p-5 text-center border border-pink-400/20 hover:border-pink-400/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-pink-400/20 cursor-pointer">
+                    <div className="relative mb-3">
+                      <div className="w-12 h-12 mx-auto bg-gradient-to-br from-pink-400/20 to-pink-600/20 rounded-xl flex items-center justify-center group-hover:from-pink-400/30 group-hover:to-pink-600/30 transition-all duration-300">
+                        <Target size={24} className="text-pink-400 group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                      <div className="absolute inset-0 bg-pink-400/5 rounded-xl blur-sm group-hover:bg-pink-400/10 transition-all duration-300"></div>
+                    </div>
+                    <div className="text-sm text-white font-semibold group-hover:text-pink-400 transition-colors duration-300">Precision</div>
                   </div>
                   
-                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-yellow-400/30 hover:border-yellow-400 transition-all duration-300">
-                    <div className="text-2xl mb-2 text-yellow-400">🧠</div>
-                    <div className="text-sm text-white font-medium">Problem Solving</div>
+                  <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-lg rounded-2xl p-5 text-center border border-yellow-400/20 hover:border-yellow-400/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-yellow-400/20 cursor-pointer">
+                    <div className="relative mb-3">
+                      <div className="w-12 h-12 mx-auto bg-gradient-to-br from-yellow-400/20 to-yellow-600/20 rounded-xl flex items-center justify-center group-hover:from-yellow-400/30 group-hover:to-yellow-600/30 transition-all duration-300">
+                        <Brain size={24} className="text-yellow-400 group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                      <div className="absolute inset-0 bg-yellow-400/5 rounded-xl blur-sm group-hover:bg-yellow-400/10 transition-all duration-300"></div>
+                    </div>
+                    <div className="text-sm text-white font-semibold group-hover:text-yellow-400 transition-colors duration-300">Problem Solving</div>
                   </div>
                   
-                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-blue-400/30 hover:border-blue-400 transition-all duration-300">
-                    <div className="text-2xl mb-2 text-blue-400">👤</div>
-                    <div className="text-sm text-white font-medium">Client Focus</div>
+                  <div className="group bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-lg rounded-2xl p-5 text-center border border-blue-400/20 hover:border-blue-400/60 transition-all duration-500 hover:scale-105 hover:shadow-lg hover:shadow-blue-400/20 cursor-pointer">
+                    <div className="relative mb-3">
+                      <div className="w-12 h-12 mx-auto bg-gradient-to-br from-blue-400/20 to-blue-600/20 rounded-xl flex items-center justify-center group-hover:from-blue-400/30 group-hover:to-blue-600/30 transition-all duration-300">
+                        <Users size={24} className="text-blue-400 group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                      <div className="absolute inset-0 bg-blue-400/5 rounded-xl blur-sm group-hover:bg-blue-400/10 transition-all duration-300"></div>
+                    </div>
+                    <div className="text-sm text-white font-semibold group-hover:text-blue-400 transition-colors duration-300">Client Focus</div>
                   </div>
                 </div>
               </div>
