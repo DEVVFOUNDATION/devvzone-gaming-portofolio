@@ -106,38 +106,106 @@ const Index = () => {
           </div>
 
           {/* Profile Section */}
-          <div className="max-w-4xl mx-auto bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-3xl p-8 border-2 border-cyan-400/30 shadow-2xl shadow-cyan-400/10 mb-16 retro-card relative overflow-hidden">
+          <div className="max-w-6xl mx-auto bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-sm rounded-3xl p-8 border-2 border-cyan-400/30 shadow-2xl shadow-cyan-400/10 mb-16 retro-card relative overflow-hidden">
             {/* Animated border */}
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-cyan-400/20 via-purple-400/20 to-pink-400/20 animate-pulse"></div>
             <div className="absolute inset-1 rounded-3xl bg-gradient-to-br from-slate-800/90 to-slate-900/90"></div>
             
-            <div className="flex flex-col md:flex-row items-center gap-8 relative z-10">
-              <div className="relative">
-                <div className="w-32 h-32 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-full p-1 animate-pulse">
-                  <div className="w-full h-full bg-slate-800 rounded-full flex items-center justify-center relative overflow-hidden">
-                    <span className="text-4xl font-bold text-cyan-400 retro-text">
-                      <img src="Devvprofil.jpg" alt="DEVVZONE" />
-                    </span>
-                    {/* Pixel effect overlay */}
-                    <div className="absolute inset-0 bg-[linear-gradient(45deg,transparent_25%,rgba(0,255,255,0.1)_25%,rgba(0,255,255,0.1)_50%,transparent_50%,transparent_75%,rgba(0,255,255,0.1)_75%)] bg-[size:4px_4px] animate-float"></div>
+            <div className="flex flex-col lg:flex-row gap-8 relative z-10">
+              {/* Left side - Avatar and Skills */}
+              <div className="flex flex-col items-center space-y-6">
+                {/* Avatar */}
+                <div className="relative">
+                  <div className="w-32 h-32 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full p-1 animate-pulse">
+                    <div className="w-full h-full bg-slate-800 rounded-full flex items-center justify-center">
+                      <span className="text-6xl font-bold text-cyan-400 retro-text">D</span>
+                    </div>
+                  </div>
+                  <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-slate-800 animate-pulse"></div>
+                </div>
+                
+                {/* Name */}
+                <div className="bg-purple-600 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                  Deva / Devv
+                </div>
+                
+                {/* Skills Grid */}
+                <div className="grid grid-cols-3 gap-3 mt-6">
+                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-cyan-400/30 hover:border-cyan-400 transition-all duration-300">
+                    <div className="text-2xl mb-2 text-cyan-400">🎮</div>
+                    <div className="text-sm text-white font-medium">Gaming</div>
+                  </div>
+                  
+                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-purple-400/30 hover:border-purple-400 transition-all duration-300">
+                    <div className="text-2xl mb-2 text-purple-400">💻</div>
+                    <div className="text-sm text-white font-medium">Development</div>
+                  </div>
+                  
+                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-green-400/30 hover:border-green-400 transition-all duration-300">
+                    <div className="text-2xl mb-2 text-green-400">⚡</div>
+                    <div className="text-sm text-white font-medium">Quick Execution</div>
+                  </div>
+                  
+                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-pink-400/30 hover:border-pink-400 transition-all duration-300">
+                    <div className="text-2xl mb-2 text-pink-400">🎯</div>
+                    <div className="text-sm text-white font-medium">Precision</div>
+                  </div>
+                  
+                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-yellow-400/30 hover:border-yellow-400 transition-all duration-300">
+                    <div className="text-2xl mb-2 text-yellow-400">🧠</div>
+                    <div className="text-sm text-white font-medium">Problem Solving</div>
+                  </div>
+                  
+                  <div className="bg-slate-700/50 backdrop-blur-sm rounded-2xl p-4 text-center border border-blue-400/30 hover:border-blue-400 transition-all duration-300">
+                    <div className="text-2xl mb-2 text-blue-400">👤</div>
+                    <div className="text-sm text-white font-medium">Client Focus</div>
                   </div>
                 </div>
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-slate-800 animate-pulse"></div>
-                {/* Lightning effects around avatar */}
-                <div className="absolute -top-2 -left-2 text-yellow-400 animate-ping">⚡</div>
-                <div className="absolute -bottom-2 -left-2 text-purple-400 animate-ping" style={{ animationDelay: '1s' }}>✨</div>
               </div>
               
-              <div className="flex-1 text-center md:text-left">
-                <h2 className="text-3xl font-bold text-cyan-400 mb-2 retro-glow">Deva / Devv</h2>
-                <div className="text-gray-300 leading-relaxed space-y-3 retro-text">
-                  <p>Halo! Aku adalah seseorang yang percaya bahwa setiap skill itu punya nilai, asal dijalankan dengan tekad dan disiplin. Berawal dari keterbatasan hingga bisa menggunakan software editing dan logika coding, aku berusaha untuk berkembang di berbagai dunia digital dari gaming, desain, hingga konten kreatif.</p>
+              {/* Right side - Description */}
+              <div className="flex-1 text-left">
+                <div className="text-gray-300 leading-relaxed space-y-4 retro-text">
+                  <p>
+                    <span className="text-cyan-400 font-semibold">Halo!</span> Aku adalah seseorang yang percaya bahwa setiap skill itu punya nilai, 
+                    asal dijalankan dengan tekad dan disiplin. Berawal dari keterbatasan hingga 
+                    bisa menggunakan software editing dan logika coding, aku berusaha untuk 
+                    berkembang di berbagai dunia digital dari <span className="text-cyan-400">gaming</span>, <span className="text-purple-400">desain</span>, hingga <span className="text-green-400">konten kreatif</span>.
+                  </p>
                   
-                  <p>Fokus utama saat ini adalah membangun layanan joki terpercaya dan berkualitas lewat devvjoki, tempat dimana kepercayaan dan kepuasan jadi prioritas. Di balik layar, aku juga terbiasa mengelola data, membangun sistem tracking, hingga menyusun strategi konten dan branding.</p>
+                  <p>
+                    Fokus utamaku saat ini adalah membangun layanan joki terpercaya dan 
+                    berkualitas lewat <span className="text-cyan-400 font-semibold">devvjoki</span>, tempat di mana <span className="text-green-400">kepercayaan</span> dan <span className="text-pink-400">kepuasan</span> jadi 
+                    prioritas. Di balik layar, aku juga terbiasa mengelola data, membangun sistem 
+                    tracking pesanan, hingga menyusun strategi konten dan branding yang kuat.
+                  </p>
                   
-                  <p>Buatku, jadi hebat bukan tentang jadi yang paling cepat, tapi jadi yang paling konsisten. Aku bukan siapa-siapa tapi aku tahu aku bisa jadi seseorang, karena aku bergerak setiap hari untuk ke sana.</p>
+                  <p>
+                    Aku bukan hanya sekedar gamer atau editor, tapi juga seseorang yang suka 
+                    memecahkan masalah dan belajar cepat di berbagai bidang digital. Aku 
+                    terbiasa menggunakan banyak tools, menyesuaikan workflow, dan berpikir 
+                    sistematis.
+                  </p>
                   
-                  <p className="text-cyan-400 font-semibold">Multiskill. Progress mindset. No excuses. Let's grow.</p>
+                  {/* Quote Box */}
+                  <div className="bg-slate-800/50 border-l-4 border-cyan-400 p-4 rounded-lg mt-6">
+                    <p className="text-cyan-400 font-semibold italic">
+                      Buatku, "jadi hebat bukan tentang jadi yang paling cepat, tapi jadi 
+                      yang paling konsisten."
+                    </p>
+                    <p className="text-gray-400 mt-2 text-sm">
+                      Aku bukan siapa-siapa, tapi aku tahu aku bisa jadi seseorang — karena 
+                      aku bergerak setiap hari untuk ke sana.
+                    </p>
+                  </div>
+                  
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2 mt-6">
+                    <span className="bg-cyan-600 text-white px-3 py-1 rounded-full text-sm">Multiskill</span>
+                    <span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm">Progress Mindset</span>
+                    <span className="bg-green-600 text-white px-3 py-1 rounded-full text-sm">No Excuses</span>
+                    <span className="bg-yellow-600 text-white px-3 py-1 rounded-full text-sm">Let's Grow</span>
+                  </div>
                 </div>
               </div>
             </div>
