@@ -6,9 +6,10 @@ import { Volume2, Headphones, Gamepad2 } from 'lucide-react';
 interface SoundModalProps {
   isOpen: boolean;
   onClose: () => void;
+  onGameOn: () => void;
 }
 
-const SoundModal: React.FC<SoundModalProps> = ({ isOpen, onClose }) => {
+const SoundModal: React.FC<SoundModalProps> = ({ isOpen, onClose, onGameOn }) => {
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-md bg-gradient-to-br from-slate-900/95 to-purple-900/95 backdrop-blur-lg border-2 border-cyan-400/50 rounded-3xl p-0 overflow-hidden">
@@ -61,7 +62,7 @@ const SoundModal: React.FC<SoundModalProps> = ({ isOpen, onClose }) => {
 
             {/* Action Button */}
             <Button
-              onClick={onClose}
+              onClick={onGameOn}
               className="w-full mt-6 bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-500 hover:to-purple-500 text-white font-bold py-3 px-6 rounded-2xl border-2 border-cyan-400/50 hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-400/20"
             >
               <span className="flex items-center justify-center gap-2">

@@ -36,6 +36,14 @@ const RetroMusic: React.FC = () => {
     setShowSoundModal(false);
   };
 
+  const handleGameOn = () => {
+    if (audioRef.current && !isPlaying) {
+      audioRef.current.play().catch(console.error);
+      setIsPlaying(true);
+    }
+    setShowSoundModal(false);
+  };
+
   useEffect(() => {
     if (audioRef.current) {
       audioRef.current.volume = isMuted ? 0 : volume[0] / 100;
@@ -66,7 +74,7 @@ const RetroMusic: React.FC = () => {
 
   return (
     <>
-      <SoundModal isOpen={showSoundModal} onClose={handleModalClose} />
+      <SoundModal isOpen={showSoundModal} onClose={handleModalClose} onGameOn={handleGameOn} />
       
       <div className="fixed bottom-4 right-4 z-50">
         <div className={`bg-slate-800/90 backdrop-blur-sm rounded-lg border border-cyan-400/30 transition-all duration-300 ${
